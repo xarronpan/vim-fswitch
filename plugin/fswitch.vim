@@ -336,7 +336,7 @@ endfunction
 augroup fswitch_au_group
     au!
     au BufEnter *.c    call s:SetVariables('h',       'reg:/src/include/,reg:|src|include/**|,ifrel:|/src/|../include|')
-    au BufEnter *.cc   call s:SetVariables('hh',      'reg:/src/include/,reg:|src|include/**|,ifrel:|/src/|../include|')
+    au BufEnter *.cc   call s:SetVariables('hh,h',      'reg:/src/include/,reg:|src|include/**|,ifrel:|/src/|../include|')
     au BufEnter *.cpp  call s:SetVariables('hpp,h',   'reg:/src/include/,reg:|src|include/**|,ifrel:|/src/|../include|')
     au BufEnter *.cxx  call s:SetVariables('hxx',     'reg:/src/include/,reg:|src|include/**|,ifrel:|/src/|../include|')
     au BufEnter *.C    call s:SetVariables('H',       'reg:/src/include/,reg:|src|include/**|,ifrel:|/src/|../include|')
